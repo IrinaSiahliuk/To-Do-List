@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    color: #ffffff;
+    background-color: #374151;
+}
+
+header{
+    padding: 36px 18px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+#add-task-form{
+    display: flex;
+}
+
+input, button{
+    outline: none;
+    border: none;
+}
+
+#add-task-input{
+    flex-grow: 1;
+    padding: 18px;
+    margin-right: 18px;
+
+    font-size: 20px;
+    border-radius: 18px;
+    color: #eee;
+    background-color: #1F2937;
+}
+
+#add-task-btn{
+    padding: 20px;
+  
+    color: #1F2937;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#add-task-btn:hover{
+    opacity: 0.8;
+}
+
+.task-list {
+	flex-grow: 1;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+    padding: 18px;
+}
+
+.task {
+	display: flex;
+	justify-content: space-between;
+	background-color: #111827;
+	padding: 18px;
+	border-radius: 18px;
+	margin-bottom: 18px;
+}
+
+.task .task-content {
+	font-size: 20px;
+}
+
+.task .task-actions button {
+	cursor: pointer;
+	margin: 0 8px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .task-actions button:hover {
+	opacity: 0.8;
+}
+
+.task .task-actions .done-btn {
+	/* background-color: rgb(87, 221, 132); */
+    background-color: #c9bde6;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.done p{
+    text-decoration: line-through;
+    color: rgb(47, 48, 54);
+}
+
+.task .task-actions .remove-btn {
+	/* background-color: crimson; */
+    background-color: #c9bde6;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
